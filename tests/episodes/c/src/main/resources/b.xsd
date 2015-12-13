@@ -1,0 +1,22 @@
+<xsd:schema
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	xmlns:xjc="http://java.sun.com/xml/ns/jaxb/xjc"
+ 	targetNamespace="b"
+	xmlns:a="a"
+	xmlns:b="b"
+	xmlns:jaxb="http://java.sun.com/xml/ns/jaxb"
+	jaxb:version="1.0">
+	<!-- elementFormDefault="qualified">-->
+
+	<xsd:import namespace="a" schemaLocation="a.xsd"/>
+
+	<xsd:element name="b" type="b:BType"/>
+	<xsd:complexType name="BType">
+		<xsd:sequence>
+			<xsd:element name="b1" type="xsd:string" minOccurs="1" maxOccurs="1">
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+	
+
+</xsd:schema>
